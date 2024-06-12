@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+<div class="tabs">
+    <ul>
+      {% for tab in site.data.tabs %}
+        <li><a href="{{ tab.url }}">{{ tab.title }}</a></li>
+      {% endfor %}
+    </ul>
+</div>
 
 <!DOCTYPE html>
 <html>
@@ -17,9 +24,9 @@ layout: default
     <figcaption>Figure 1: 14 Centrally Star Forming Galaxies with Old and red outer disk</figcaption>
     </figure>
 
-    <p>Luminosity Weighted Age Radial Profiles: </p>
+    <p>Luminosity Weighted Age Maps: </p>
     <figure>
-        <img src="https://raw.githubusercontent.com/mmckay18/mmckay18.github.io/master/assets/bbrd_ageL_mosaic.jpeg" alt="Project 1 image" width="600"> 
+        <img src="https://raw.githubusercontent.com/mmckay18/mmckay18.github.io/master/assets/bbrd_ageL_mosaic.jpeg" alt="Project 1 image" width="800"> 
         <figcaption>
             Figure 2: Luminosity Weighted Age Maps
         </figcaption>
