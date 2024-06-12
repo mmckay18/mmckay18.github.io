@@ -1,18 +1,19 @@
 ---
 layout: default
 ---
-<div class="tabs">
-    <ul>
-      {% for tab in site.data.tabs %}
-        <li><a href="{{ tab.url }}">{{ tab.title }}</a></li>
-      {% endfor %}
-    </ul>
-</div>
+
 
 <!DOCTYPE html>
 <html>
 <head>
     <title>Myles McKay Portfolio</title>
+    <div class="tabs">
+        <ul>
+          {% for tab in site.data.tabs %}
+            <li><a href="{{ tab.url }}">{{ tab.title }}</a></li>
+          {% endfor %}
+        </ul>
+    </div>
 </head>
 <body>
     <h1>Project 1: Radial Distrubution of Nearby Galaxies</h1>
